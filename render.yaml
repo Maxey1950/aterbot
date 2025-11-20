@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: aterbot
+    env: node
+    plan: free
+    buildCommand: 'pnpm install'
+    startCommand: 'pnpm start'
+    envVars:
+      - key: MC_HOST
+        value: 'YOUR_SERVER_IP'
+      - key: MC_PORT
+        value: 25565
+      - key: MC_USERNAME
+        value: 'Bot'
